@@ -525,29 +525,25 @@ header .container .row .img {
     margin: 0 auto;
 }
 
-.Popular .container .row {
-    flex-wrap: wrap;
+.Popular .container .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 50px;
     padding-bottom: 5%;
 }
 
-.Popular .container .row .Popular-item {
-    width: 30%;
-    padding-bottom: 30px;
-}
-
-.Popular .container .row .item-img {
+.Popular .container .grid-container .item-img {
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
 
-.Popular .container .row .item-img>img {
+.Popular .container .grid-container .item-img>img {
     width: 100%;
     border-bottom: 3px solid var(--main-color);
 }
 
-.Popular .container .row .add-cart {
+.Popular .container .grid-container .add-cart {
     width: 100%;
     padding: 30px;
     position: absolute;
@@ -563,11 +559,11 @@ header .container .row .img {
     -o-transition: all .4s ease-out;
 }
 
-.Popular .container .row .Popular-item:hover .add-cart {
+.Popular .container .grid-container .Popular-item:hover .add-cart {
     bottom: 0;
 }
 
-.Popular .container .row .item-img .favorit-items {
+.Popular .container .grid-container .item-img .favorit-items {
     position: absolute;
     top: 12px;
     right: 20px;
@@ -580,27 +576,28 @@ header .container .row .img {
     -o-transition: all .4s ease-out;
 }
 
-.Popular .container .row .Popular-item:hover .item-img .favorit-items {
+.Popular .container .grid-container .Popular-item:hover .item-img .favorit-items {
     visibility: visible;
     opacity: 1;
 }
 
-.Popular .container .row .item-img .favorit-items>a {
+.Popular .container .grid-container .item-img .favorit-items>a {
     color: var(--four-color);
 }
 
-.Popular .container .row .item-img .favorit-items>a i {
+.Popular .container .grid-container .item-img .favorit-items>a i {
     font-size: 30px;
 }
 
-.Popular .container .row .item-content {
+.Popular .container .grid-container .item-content {
     text-align: center;
 }
 
-.Popular .container .row .item-content>h2 {
+.Popular .container .grid-container .item-content>h2 {
     color: var(--four-color);
     font-weight: 700;
     font-size: 24px;
+    padding-bottom: 20px;
 }
 
 .Popular .container .row .item-content>p {
@@ -728,6 +725,7 @@ header .container .row .img {
     .newproduct .grid-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 330px);
+        padding-bottom: 10%;
     }
     .newproduct .grid-container .item {
         width: 100%;
@@ -735,16 +733,15 @@ header .container .row .img {
     .newproduct .grid-container .item:nth-child(1) {
         grid-column: unset;
     }
-    .Popular .container .row {
+    .Popular .container .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 30px;
     }
     .Popular .container .content-head>p {
         width: 85%;
     }
-    .Popular .container .row .Popular-item {
-        width: 45%;
-    }
-    .Popular .container .row .item-content>h2 {
+    .Popular .container .grid-container .item-content>h2 {
         font-size: 16px;
     }
 }
@@ -806,10 +803,12 @@ header .container .row .img {
     .Popular .container .content-head>p {
         width: 100%;
     }
-    .Popular .container .row .Popular-item {
-        width: 100%;
+    .Popular .container .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: unset;
+        padding-bottom: 10%;
     }
-    .Popular .container .row .item-content>h2 {
+    .Popular .container .grid-container .item-content>h2 {
         font-size: 20px;
     }
 }
