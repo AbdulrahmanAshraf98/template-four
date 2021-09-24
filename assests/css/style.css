@@ -749,6 +749,9 @@ header .container .row .img {
 @media (max-width:767px) {}
 
 @media (max-width:575px) {
+    .btn-2 {
+        padding: 20px 25px;
+    }
     /*--------------header ---------------*/
     header {
         padding: 45px 0;
