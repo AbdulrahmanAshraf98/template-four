@@ -11,6 +11,7 @@
     --second-color: #141517;
     --third-color: #f0f0f2;
     --four-color: #4a4a4b;
+    --five-color: #777;
     --white-color: #fff;
     --header-font-color: #0b1c39;
     --text-color: #212025;
@@ -23,7 +24,24 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body {}
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: dark;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 6px;
+    border: 3px solid var(--white-color);
+}
 
 a {
     text-decoration: none;
@@ -216,7 +234,6 @@ nav .list li .dropdown {
     -o-border-radius: 10%;
     visibility: hidden;
     opacity: 0;
-    filter: drop-shadow(1px 2px 4px #e0e0e0);
     transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
@@ -613,6 +630,131 @@ header .container .row .img {
 
 /*--------------Popular -------------------*/
 
+/*--------------Video section -------------------*/
+
+.bg-video {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg-video .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    content: "";
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    visibility: hidden;
+}
+
+.bg-video:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(2, 5, 12, 0.5);
+}
+
+.bg-video .overlay .btn-icon {
+    visibility: visible;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    background: none;
+    outline: 0;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+}
+
+.bg-video .overlay:hover .btn-icon {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.bg-video .overlay .btn-icon:hover {
+    color: var(--main-color);
+    background-color: var(--white-color)
+}
+
+.bg-video .overlay .next-video {
+    visibility: visible;
+    align-self: flex-end;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    width: 35%;
+    padding: 5% 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-video .overlay .next-video>h3 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.bg-video .overlay .next-video>a {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*--------------Video section -------------------*/
+
+/*--------------watch-area  -------------------*/
+
+.watch-area {
+    padding: 10% 0;
+}
+
+.watch-area .container .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 80px 100px;
+    align-items: center;
+}
+
+.watch-area .container .grid-container .watch-item>h2 {
+    color: var(--second-color);
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.watch-area .container .grid-container .watch-item>p {
+    color: var(--five-color);
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.watch-area .container .grid-container .watch-item>img {
+    width: 100%;
+}
+
+/*--------------watch-area  -------------------*/
+
 /* --------------media query----------------- */
 
 @media (max-width: 1119px) {}
@@ -741,6 +883,8 @@ header .container .row .img {
     .newproduct .grid-container .item:nth-child(1) {
         grid-column: unset;
     }
+    /*--------------new product ---------------*/
+    /*--------------Popular ---------------*/
     .Popular .container .grid-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -752,9 +896,34 @@ header .container .row .img {
     .Popular .container .grid-container .item-content>h2 {
         font-size: 16px;
     }
+    /*--------------Popular ---------------*/
+    /*--------------bg-video ---------------*/
+    .bg-video {
+        height: 400px;
+    }
+    /*--------------bg-video ---------------*/
+    /*--------------watch-area  -------------------*/
+    .watch-area .container .grid-container .watch-item>h2 {
+        font-size: 34px;
+    }
+    /*--------------watch-area  -------------------*/
 }
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    /*--------------watch-area  -------------------*/
+    .watch-area .container .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: unset;
+        gap: 3%;
+    }
+    .watch-area .container .grid-container .watch-item>h2 {
+        font-size: 28px;
+    }
+    .watch-area .container .grid-container .watch-item>p {
+        margin-bottom: 30px;
+    }
+    /*--------------watch-area  -------------------*/
+}
 
 @media (max-width:575px) {
     nav .icon a>i {
@@ -815,6 +984,7 @@ header .container .row .img {
         height: 688px;
     }
     /*--------------new product ---------------*/
+    /*--------------Popular ---------------*/
     .Popular .container .content-head>h2 {
         font-size: 33px;
     }
@@ -829,4 +999,17 @@ header .container .row .img {
     .Popular .container .grid-container .item-content>h2 {
         font-size: 20px;
     }
+    /*--------------Popular ---------------*/
+    /*--------------bg-video ---------------*/
+    .bg-video .overlay .next-video {
+        width: 50%;
+        padding: 5% 6%;
+    }
+    .bg-video .overlay .next-video>h3 {
+        font-size: 16px;
+    }
+    .bg-video .overlay .next-video>a {
+        font-size: 16px;
+    }
+    /*--------------bg-video ---------------*/
 }
