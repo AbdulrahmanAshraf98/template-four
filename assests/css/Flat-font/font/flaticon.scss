@@ -1,0 +1,77 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e9803ff87dfc2fbc60922c27269aebcb") format("truetype"),
+url("./flaticon.woff?e9803ff87dfc2fbc60922c27269aebcb") format("woff"),
+url("./flaticon.woff2?e9803ff87dfc2fbc60922c27269aebcb") format("woff2"),
+url("./flaticon.eot?e9803ff87dfc2fbc60922c27269aebcb#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e9803ff87dfc2fbc60922c27269aebcb#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "box": "\f101",
+    "unlock": "\f102",
+    "reload": "\f103",
+    "search": "\f104",
+    "shopping-cart": "\f105",
+    "user": "\f106",
+    "play-button-arrowhead": "\f107",
+    "next": "\f108",
+    "twitter": "\f109",
+    "facebook": "\f10a",
+    "behance": "\f10b",
+    "globalization": "\f10c",
+    "list": "\f10d",
+);
+
+.flaticon-box:before {
+    content: map-get($flaticon-map, "box");
+}
+.flaticon-unlock:before {
+    content: map-get($flaticon-map, "unlock");
+}
+.flaticon-reload:before {
+    content: map-get($flaticon-map, "reload");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-play-button-arrowhead:before {
+    content: map-get($flaticon-map, "play-button-arrowhead");
+}
+.flaticon-next:before {
+    content: map-get($flaticon-map, "next");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-behance:before {
+    content: map-get($flaticon-map, "behance");
+}
+.flaticon-globalization:before {
+    content: map-get($flaticon-map, "globalization");
+}
+.flaticon-list:before {
+    content: map-get($flaticon-map, "list");
+}
