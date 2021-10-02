@@ -799,7 +799,7 @@ header .container .row .img {
 /*--------------Footer start--------------------------*/
 
 footer {
-    padding-bottom: 15%;
+    padding-bottom: 8%;
 }
 
 footer .container .grid-container {
@@ -882,6 +882,7 @@ footer .container .grid-container .footer-bottom .row .copyright {
 
 footer .container .grid-container .footer-bottom .row .copyright>p {
     line-height: 1.5;
+    color: var(--five-color);
 }
 
 footer .container .grid-container .footer-bottom .row .copyright>p>a {
