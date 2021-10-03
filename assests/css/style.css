@@ -938,6 +938,7 @@ footer .container .grid-container .footer-bottom .row .social-icon>a:hover {
     }
     nav label>i {
         font-size: 30px;
+        color: var(--four-color);
     }
     nav .icon a>i {
         font-size: 24px;
