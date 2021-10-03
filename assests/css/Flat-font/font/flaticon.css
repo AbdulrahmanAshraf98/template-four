@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?e9803ff87dfc2fbc60922c27269aebcb") format("truetype"),
-url("./flaticon.woff?e9803ff87dfc2fbc60922c27269aebcb") format("woff"),
-url("./flaticon.woff2?e9803ff87dfc2fbc60922c27269aebcb") format("woff2"),
-url("./flaticon.eot?e9803ff87dfc2fbc60922c27269aebcb#iefix") format("embedded-opentype"),
-url("./flaticon.svg?e9803ff87dfc2fbc60922c27269aebcb#flaticon") format("svg");
+    src: url("./flaticon.ttf?3e484a2ece19513ba286aa9480643554") format("truetype"),
+url("./flaticon.woff?3e484a2ece19513ba286aa9480643554") format("woff"),
+url("./flaticon.woff2?3e484a2ece19513ba286aa9480643554") format("woff2"),
+url("./flaticon.eot?3e484a2ece19513ba286aa9480643554#iefix") format("embedded-opentype"),
+url("./flaticon.svg?3e484a2ece19513ba286aa9480643554#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -54,6 +54,6 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-globalization:before {
     content: "\f10c";
 }
-.flaticon-list:before {
+.flaticon-menu:before {
     content: "\f10d";
 }
