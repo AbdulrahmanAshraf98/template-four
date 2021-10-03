@@ -867,6 +867,7 @@ footer .container .grid-container .footer-top .grid-container .list-footer>a>img
 
 footer .container .grid-container .footer-bottom {
     width: 100%;
+    padding-bottom: 5%;
 }
 
 footer .container .grid-container .footer-bottom .row {
@@ -884,7 +885,9 @@ footer .container .grid-container .footer-bottom .row .copyright>p {
     line-height: 1.5;
     color: var(--five-color);
 }
-
+footer .container .grid-container .footer-bottom .row .copyright>p>i{
+    color: var(--main-color);
+}
 footer .container .grid-container .footer-bottom .row .copyright>p>a {
     color: var(--main-color);
 }
@@ -1156,7 +1159,7 @@ footer .container .grid-container .footer-bottom .row .social-icon>a:hover {
     }
     footer .container .grid-container .footer-bottom .row .copyright {
         width: 100%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
     footer .container .grid-container .footer-bottom .row .social-icon {
         width: 100%;
@@ -1273,6 +1276,9 @@ footer .container .grid-container .footer-bottom .row .social-icon>a:hover {
     }
     footer .grid-container .footer-top .grid-container .list-footer>p {
         margin-bottom: 10px;
+    }
+     footer .container .grid-container .footer-bottom .row .copyright {
+        margin-bottom: 10%;
     }
     /*--------------footer ---------------*/
 }

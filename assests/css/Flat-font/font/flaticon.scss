@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?3e484a2ece19513ba286aa9480643554") format("truetype"),
-url("./flaticon.woff?3e484a2ece19513ba286aa9480643554") format("woff"),
-url("./flaticon.woff2?3e484a2ece19513ba286aa9480643554") format("woff2"),
-url("./flaticon.eot?3e484a2ece19513ba286aa9480643554#iefix") format("embedded-opentype"),
-url("./flaticon.svg?3e484a2ece19513ba286aa9480643554#flaticon") format("svg");
+    src: url("./flaticon.ttf?e76aea19abc9edf0e604e449ad536ef8") format("truetype"),
+url("./flaticon.woff?e76aea19abc9edf0e604e449ad536ef8") format("woff"),
+url("./flaticon.woff2?e76aea19abc9edf0e604e449ad536ef8") format("woff2"),
+url("./flaticon.eot?e76aea19abc9edf0e604e449ad536ef8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e76aea19abc9edf0e604e449ad536ef8#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -34,6 +34,8 @@ $flaticon-map: (
     "behance": "\f10b",
     "globalization": "\f10c",
     "menu": "\f10d",
+    "like": "\f10e",
+    "heart": "\f10f",
 );
 
 .flaticon-box:before {
@@ -74,4 +76,10 @@ $flaticon-map: (
 }
 .flaticon-menu:before {
     content: map-get($flaticon-map, "menu");
+}
+.flaticon-like:before {
+    content: map-get($flaticon-map, "like");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
 }
