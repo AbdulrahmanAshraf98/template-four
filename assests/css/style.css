@@ -879,6 +879,7 @@ footer .container .grid-container .footer-bottom .row {
     color: var(--four-color);
     align-items: center;
     justify-content: space-between;
+    font-size:14px;
 }
 
 footer .container .grid-container .footer-bottom .row .copyright {
@@ -890,6 +891,7 @@ footer .container .grid-container .footer-bottom .row .copyright>p {
     color: var(--five-color);
 }
 footer .container .grid-container .footer-bottom .row .copyright>p>i{
+
     color: var(--main-color);
 }
 footer .container .grid-container .footer-bottom .row .copyright>p>a {
@@ -899,15 +901,16 @@ footer .container .grid-container .footer-bottom .row .copyright>p>a {
 footer .container .grid-container .footer-bottom .row .social-icon>a {
     color: var(--second-color);
     margin-right: 20px;
-    display: inline-block;
+}
+footer .container .grid-container .footer-bottom .row .social-icon>a i {
+    display: inline-block;   
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
-
-footer .container .grid-container .footer-bottom .row .social-icon>a:hover {
+footer .container .grid-container .footer-bottom .row .social-icon>a:hover i{
     color: var(--main-color);
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
