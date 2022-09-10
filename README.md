@@ -46,7 +46,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## 🌐 LIVE DEMO <a name = "LIVE_DEMO"></a>
 
-- [Vercel](template-four.vercel.app)
+- [Vercel](https://template-four.vercel.app/)
 
 ## 📋 Features <a name = "Features"></a>
 
